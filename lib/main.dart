@@ -20,7 +20,7 @@ class MyApp extends StatelessWidget {
         colorSchemeSeed: Colorof.primaryColor,
       ),
       debugShowCheckedModeBanner: false,
-      home: const MyHomePage(title: 'Wiki-Template'),
+      home: const MyHomePage(),
     );
   }
 }

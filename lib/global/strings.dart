@@ -10,6 +10,12 @@ class Stringof {
   static const appTitle = "WIKI CAMPS";
   static const wfab = "Floating Action Buttom";
   static const wAppBar = "App Bar";
+  static const wElevatedButton = "Elevated Button";
+  static const wOutlinedButton = "Outlined Button";
+  static const wFilledButton = "Filled Button";
+  static const wFilledTonalButton = "FilledTonal Button";
+  static const wTextButton = "Text Button";
+  static const wIconButton = "Icon Button";
 
   // Font Family
 
