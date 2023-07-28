@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:wiki_template_app/global/global.dart';
-import 'package:wiki_template_app/router/routes/route_config.dart';
+import 'global/global.dart';
+import 'router/routes/route_config.dart';
 
 void main() {
   runApp(const MyApp());

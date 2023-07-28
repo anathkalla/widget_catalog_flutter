@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:wiki_template_app/widgets/AppBar/app_bar.dart';
-
+import '../widgets/AppBar/app_bar.dart';
 import '../widgets/Buttons/elevated_button.dart';
 import '../widgets/Buttons/filled_button.dart';
 import '../widgets/Buttons/filled_button_tonal.dart';

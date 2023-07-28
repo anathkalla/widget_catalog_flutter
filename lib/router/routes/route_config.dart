@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
-import 'package:wiki_template_app/router/routes/routes_constants.dart';
-import 'package:wiki_template_app/screens/home_page.dart';
 
 import '../../screens/buttons_screen.dart';
+import '../../screens/home_page.dart';
 import '../../screens/page_not_found.dart';
+import 'routes_constants.dart';
 
 class AppRouter {
   GoRouter router = GoRouter(

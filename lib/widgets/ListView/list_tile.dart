@@ -1,8 +1,8 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
-import 'package:wiki_template_app/global/global.dart';
 
+import '../../global/global.dart';
 import '../../router/routes/routes_constants.dart';
 
 class WidgetListItem extends StatelessWidget {

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:wiki_template_app/widgets/AppBar/app_bar.dart';
+
+import '../widgets/AppBar/app_bar.dart';
 
 class PageNotFound extends StatelessWidget {
   const PageNotFound({super.key});
