@@ -5,11 +5,16 @@ import '../../global/global.dart';
 import '../SnackBar/custom_snackbar.dart';
 
 class CsElevatedButton extends StatelessWidget {
-  const CsElevatedButton({super.key, required BuildContext context});
+  const CsElevatedButton({super.key});
 
   @override
   Widget build(BuildContext context) {
+    final ButtonStyle style = ElevatedButton.styleFrom(
+        textStyle: const TextStyle(fontSize: 20),
+        backgroundColor: Colorof.secondaryColor,
+        foregroundColor: Colorof.secondaryLightColor);
     return ElevatedButton(
+      style: style,
       onPressed: () {
         CsSnackBar.buildSnackbar(
           context: context,

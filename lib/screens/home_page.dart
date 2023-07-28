@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-import '../global/global.dart';
+import 'package:widget_catalog_flutter/global/global.dart';
 import '../widgets/AppBar/app_bar.dart';
-import '../widgets/SnackBar/custom_snackbar.dart';
 import '../widgets/ListView/list_view.dart';
 
 class MyHomePage extends StatelessWidget {
@@ -9,17 +8,7 @@ class MyHomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: const CsAppBar(),
-      floatingActionButton: FloatingActionButton(
-        backgroundColor: Colorof.accentColor,
-        onPressed: () {
-          CsSnackBar.buildSnackbar(
-            context: context,
-            message: Stringof.wfab,
-          );
-        },
-        child: const Icon(Icons.add),
-      ),
+      appBar: CsAppBar(title: Stringof.appTitle),
       body: CsListView(
         context: context,
       ),
