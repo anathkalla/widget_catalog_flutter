@@ -11,12 +11,14 @@ class Stringof {
   static const wfab = "Floating Action Buttom";
   static const wAppBar = "App Bar";
   static const wElevatedButton = "Elevated Button";
+  static const wDisabledButton = "Disabled Button";
   static const wOutlinedButton = "Outlined Button";
   static const wFilledButton = "Filled Button";
   static const wFilledTonalButton = "FilledTonal Button";
   static const wTextButton = "Text Button";
   static const wIconButton = "Icon Button";
   static const wSegmentedButton = "Segmented Button";
+  static const wToggleButton = "Toggle Button";
 
   // Font Family
 

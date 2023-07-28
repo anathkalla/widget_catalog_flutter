@@ -9,7 +9,12 @@ class CsElevatedButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final ButtonStyle style = ElevatedButton.styleFrom(
+        textStyle: const TextStyle(fontSize: 20),
+        backgroundColor: Colorof.secondaryColor,
+        foregroundColor: Colorof.secondaryLightColor);
     return ElevatedButton(
+      style: style,
       onPressed: () {
         CsSnackBar.buildSnackbar(
           context: context,
