@@ -16,6 +16,7 @@ class Stringof {
   static const wFilledTonalButton = "FilledTonal Button";
   static const wTextButton = "Text Button";
   static const wIconButton = "Icon Button";
+  static const wSegmentedButton = "Segmented Button";
 
   // Font Family
 

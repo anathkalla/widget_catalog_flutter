@@ -5,7 +5,7 @@ import '../../global/global.dart';
 import '../SnackBar/custom_snackbar.dart';
 
 class CsElevatedButton extends StatelessWidget {
-  const CsElevatedButton({super.key, required BuildContext context});
+  const CsElevatedButton({super.key});
 
   @override
   Widget build(BuildContext context) {
