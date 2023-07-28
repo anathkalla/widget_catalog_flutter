@@ -7,7 +7,10 @@
 class Stringof {
   Stringof._();
 
-  static const appTitle = "WIKI CAMPS";
+  static const appTitle = "WIDGET CATALOG";
+  static const buttons = "BUTTONS";
+  static const notFound = "Error Screen";
+
   static const wfab = "Floating Action Buttom";
   static const wAppBar = "App Bar";
   static const wElevatedButton = "Elevated Button";

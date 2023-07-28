@@ -21,10 +21,10 @@ class ButtonsScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     const double sizedBoxHeight = 10;
-    return const Scaffold(
-      appBar: CsAppBar(),
-      floatingActionButton: CsFloatingActionButton(),
-      body: Center(
+    return Scaffold(
+      appBar: CsAppBar(title: Stringof.buttons),
+      floatingActionButton: const CsFloatingActionButton(),
+      body: const Center(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
           mainAxisAlignment: MainAxisAlignment.start,
