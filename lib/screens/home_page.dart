@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import '../global/global.dart';
+import '../widgets/AppBar/app_bar.dart';
 import '../widgets/SnackBar/custom_snackbar.dart';
 import '../widgets/ListView/list_view.dart';
 
@@ -8,23 +9,18 @@ class MyHomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text(Stringof.appTitle, style: TextStyleof.appTitle),
-        centerTitle: true,
-        backgroundColor: Colorof.primaryColor,
-        foregroundColor: Colorof.textLight,
-      ),
+      appBar: const CsAppBar(),
       floatingActionButton: FloatingActionButton(
         backgroundColor: Colorof.accentColor,
         onPressed: () {
-          CustomSnackBar.buildSnackbar(
+          CsSnackBar.buildSnackbar(
             context: context,
             message: Stringof.wfab,
           );
         },
         child: const Icon(Icons.add),
       ),
-      body: CustonListView(
+      body: CsListView(
         context: context,
       ),
     );
