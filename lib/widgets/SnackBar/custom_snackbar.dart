@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../global/colors.dart';
+import '../../global/colors.dart';
 
 class CustomSnackBar {
   CustomSnackBar._();
