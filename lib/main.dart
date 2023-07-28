@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:wiki_template_app/global/global.dart';
-import 'screens/home_page.dart';
+import 'package:wiki_template_app/router/routes/route_config.dart';
 
 void main() {
   runApp(const MyApp());
@@ -11,14 +11,15 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return MaterialApp.router(
       title: 'Wiki - Flutter Catalog',
       theme: ThemeData(
         useMaterial3: true,
         colorSchemeSeed: Colorof.primaryColor,
       ),
-      debugShowCheckedModeBanner: false,
-      home: const MyHomePage(),
+      routerConfig:
+          AppRouter().router, //Router parser for handling routes and navigation
+      debugShowCheckedModeBanner: true,
     );
   }
 }

@@ -19,28 +19,30 @@ class ButtonsScreen extends StatelessWidget {
     const double sizedBoxHeight = 20;
     return Scaffold(
       appBar: const CsAppBar(),
-      body: Padding(
-        padding: const EdgeInsets.all(8.0),
-        child: SingleChildScrollView(
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              CsElevatedButton(
-                context: context,
-              ),
-              const CsSizedBox(height: sizedBoxHeight),
-              const CsOutlinedButton(),
-              const CsSizedBox(height: sizedBoxHeight),
-              const CsFilledButton(),
-              const CsSizedBox(height: sizedBoxHeight),
-              const CsFilledButtonTonal(),
-              const CsSizedBox(height: sizedBoxHeight),
-              const CsTextButton(),
-              const CsSizedBox(height: sizedBoxHeight),
-              const CsIconButton(),
-              const CsSizedBox(height: sizedBoxHeight),
-              // TODO : Segmented Button
-            ],
+      body: Center(
+        child: Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: SingleChildScrollView(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                CsElevatedButton(
+                  context: context,
+                ),
+                const CsSizedBox(height: sizedBoxHeight),
+                const CsOutlinedButton(),
+                const CsSizedBox(height: sizedBoxHeight),
+                const CsFilledButton(),
+                const CsSizedBox(height: sizedBoxHeight),
+                const CsFilledButtonTonal(),
+                const CsSizedBox(height: sizedBoxHeight),
+                const CsTextButton(),
+                const CsSizedBox(height: sizedBoxHeight),
+                const CsIconButton(),
+                const CsSizedBox(height: sizedBoxHeight),
+                // TODO : Segmented Button
+              ],
+            ),
           ),
         ),
       ),
