@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import '../global/global.dart';
-import '../utils/custom_snackbar.dart';
-import '../widgets/list_view.dart';
+import '../widgets/SnackBar/custom_snackbar.dart';
+import '../widgets/ListView/list_view.dart';
 
 class MyHomePage extends StatelessWidget {
   const MyHomePage({super.key});
@@ -19,10 +19,7 @@ class MyHomePage extends StatelessWidget {
         onPressed: () {
           CustomSnackBar.buildSnackbar(
             context: context,
-            bgColor: Colorof.secondaryColor,
             message: Stringof.wfab,
-            elevation: Sizeof.sSnackBarElevation,
-            insetMargin: Sizeof.sSnackBarMargin,
           );
         },
         child: const Icon(Icons.add),

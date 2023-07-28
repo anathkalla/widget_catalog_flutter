@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
-import '../list_tile.dart';
+import '../../data/mock_list_items.dart';
+import 'list_tile.dart';
 
 class CustonListView extends StatelessWidget {
   final BuildContext context;

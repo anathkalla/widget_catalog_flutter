@@ -1,7 +1,8 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:wiki_template_app/global/global.dart';
-import './screens/second_screen.dart';
+
+import '../../screens/buttons_screen.dart';
 
 class WidgetListItem extends StatelessWidget {
   final int index;
@@ -42,11 +43,9 @@ class WidgetListItem extends StatelessWidget {
             print("List Tile Tapped");
           }
           Navigator.push(context,
-              MaterialPageRoute(builder: (context) => const SecondScreen()));
+              MaterialPageRoute(builder: (context) => const ButtonsScreen()));
         },
       ),
     );
   }
 }
-
-final List widgetsList = ['Buttons', 'Texts', 'Inputs'];
