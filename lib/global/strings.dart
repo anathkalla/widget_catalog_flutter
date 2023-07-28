@@ -31,6 +31,12 @@ class Stringof {
   static const wOutlinedtextField = "Outlined Text Field";
   static const wTextField = "Text Field";
   static const wRadioButton = "Radio Input";
+  static const wDatePicker = "Date Picker";
+  static const wTimePicker = "Time Picker";
+  static const wSwitch = "Switch input";
+  static const wSlider = "Slider input";
+  static const wChips = "Chips input";
+  static const wFilterChip = "Filter Chip input";
 
   // Font Family
 
