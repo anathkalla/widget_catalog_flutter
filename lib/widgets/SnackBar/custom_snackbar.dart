@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import '../../global/colors.dart';
 
-class CustomSnackBar {
-  CustomSnackBar._();
+class CsSnackBar {
+  CsSnackBar._();
+
   static buildSnackbar({required BuildContext context, required message}) {
     ScaffoldMessenger.of(context).showSnackBar(
       SnackBar(

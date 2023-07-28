@@ -1,8 +1,9 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:wiki_template_app/global/global.dart';
+import 'package:go_router/go_router.dart';
 
-import '../../screens/buttons_screen.dart';
+import '../../global/global.dart';
+import '../../router/routes/routes_constants.dart';
 
 class WidgetListItem extends StatelessWidget {
   final int index;
@@ -42,8 +43,7 @@ class WidgetListItem extends StatelessWidget {
           if (kDebugMode) {
             print("List Tile Tapped");
           }
-          Navigator.push(context,
-              MaterialPageRoute(builder: (context) => const ButtonsScreen()));
+          context.pushNamed(RouteConstants.buttonsScreen);
         },
       ),
     );

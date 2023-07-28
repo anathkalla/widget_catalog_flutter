@@ -5,7 +5,8 @@
 */
 
 import 'package:flutter/material.dart';
-import 'package:wiki_template_app/global/global.dart';
+
+import 'global.dart';
 
 class TextStyleof {
   TextStyleof._();

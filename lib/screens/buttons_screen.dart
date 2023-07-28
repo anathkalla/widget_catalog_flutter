@@ -1,7 +1,12 @@
 import 'package:flutter/material.dart';
-
-import '../global/global.dart';
-import '../widgets/SnackBar/custom_snackbar.dart';
+import '../widgets/AppBar/app_bar.dart';
+import '../widgets/Buttons/elevated_button.dart';
+import '../widgets/Buttons/filled_button.dart';
+import '../widgets/Buttons/filled_button_tonal.dart';
+import '../widgets/Buttons/icon_button.dart';
+import '../widgets/Buttons/outlined_button.dart';
+import '../widgets/Buttons/text_button.dart';
+import '../widgets/SizeWidgets/custom_sized_box.dart';
 
 class ButtonsScreen extends StatelessWidget {
   const ButtonsScreen({
@@ -10,87 +15,34 @@ class ButtonsScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.all(8.0),
-      child: SingleChildScrollView(
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            ElevatedButton(
-              onPressed: () => {
-                CustomSnackBar.buildSnackbar(
+    const double sizedBoxHeight = 20;
+    return Scaffold(
+      appBar: const CsAppBar(),
+      body: Center(
+        child: Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: SingleChildScrollView(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                CsElevatedButton(
                   context: context,
-                  message: Stringof.wElevatedButton,
-                )
-              },
-              child: const Text(Stringof.wElevatedButton),
-            ),
-            const SizedBox(
-              height: 10,
-            ),
-            OutlinedButton(
-              onPressed: () => {
-                CustomSnackBar.buildSnackbar(
-                  context: context,
-                  message: Stringof.wOutlinedButton,
-                )
-              },
-              child: const Text(Stringof.wOutlinedButton),
-            ),
-            const SizedBox(
-              height: 10,
-            ),
-            FilledButton(
-              onPressed: () => {
-                CustomSnackBar.buildSnackbar(
-                  context: context,
-                  message: Stringof.wFilledButton,
-                )
-              },
-              child: const Text(Stringof.wFilledButton),
-            ),
-            const SizedBox(
-              height: 10,
-            ),
-            FilledButton.tonal(
-              onPressed: () => {
-                CustomSnackBar.buildSnackbar(
-                  context: context,
-                  message: Stringof.wFilledTonalButton,
-                )
-              },
-              child: const Text(Stringof.wFilledTonalButton),
-            ),
-            const SizedBox(
-              height: 10,
-            ),
-            TextButton(
-              onPressed: () => {
-                CustomSnackBar.buildSnackbar(
-                  context: context,
-                  message: Stringof.wTextButton,
-                )
-              },
-              child: const Text(Stringof.wTextButton),
-            ),
-            const SizedBox(
-              height: 10,
-            ),
-            IconButton(
-              icon: const Icon(Icons.account_balance_wallet_rounded),
-              color: Colorof.secondaryColor,
-              onPressed: () => {
-                CustomSnackBar.buildSnackbar(
-                  context: context,
-                  message: Stringof.wIconButton,
                 ),
-              },
+                const CsSizedBox(height: sizedBoxHeight),
+                const CsOutlinedButton(),
+                const CsSizedBox(height: sizedBoxHeight),
+                const CsFilledButton(),
+                const CsSizedBox(height: sizedBoxHeight),
+                const CsFilledButtonTonal(),
+                const CsSizedBox(height: sizedBoxHeight),
+                const CsTextButton(),
+                const CsSizedBox(height: sizedBoxHeight),
+                const CsIconButton(),
+                const CsSizedBox(height: sizedBoxHeight),
+                // TODO : Segmented Button
+              ],
             ),
-            const SizedBox(
-              height: 10,
-            ),
-            // TODO : Segmented Button
-          ],
+          ),
         ),
       ),
     );
