@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import '../global/global.dart';
+import '../list_view_items.dart';
 import '../utils/custom_snackbar.dart';
 
 class MyHomePage extends StatelessWidget {
@@ -26,6 +27,23 @@ class MyHomePage extends StatelessWidget {
           );
         },
         child: const Icon(Icons.add),
+      ),
+      body: ListView.separated(
+        itemCount: widgetsList.length,
+        // reverse: false,
+        // itemExtent: 100,
+        scrollDirection: Axis.vertical,
+        itemBuilder: (context, index) {
+          return WidgetListItem(
+            index: index,
+            listTitle: widgetsList[index],
+          );
+        },
+        separatorBuilder: (context, index) {
+          return const Divider(
+            height: 20,
+          );
+        },
       ),
     );
   }
