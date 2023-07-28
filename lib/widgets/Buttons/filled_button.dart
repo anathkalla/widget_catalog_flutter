@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../global/global.dart';
-import '../SnackBar/custom_snackbar.dart';
+import '../Communication/SnackBar/custom_snackbar.dart';
 
 class CsFilledButton extends StatelessWidget {
   const CsFilledButton({

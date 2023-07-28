@@ -2,19 +2,19 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
-import '../../global/global.dart';
-import '../../router/routes/routes_constants.dart';
+import '../../../global/global.dart';
 
 class WidgetListItem extends StatelessWidget {
   final int index;
   final String listTitle;
   static const String listSubTitle = "Widget";
+  final String route;
 
-  const WidgetListItem({
-    super.key,
-    required this.index,
-    required this.listTitle,
-  });
+  const WidgetListItem(
+      {super.key,
+      required this.index,
+      required this.listTitle,
+      required this.route});
 
   @override
   Widget build(BuildContext context) {
@@ -28,7 +28,7 @@ class WidgetListItem extends StatelessWidget {
           child: Placeholder(),
         ),
         title: Text(
-          listTitle,
+          listTitle.toUpperCase(),
           textAlign: TextAlign.center,
         ),
         subtitle: const Text(
@@ -43,7 +43,7 @@ class WidgetListItem extends StatelessWidget {
           if (kDebugMode) {
             print("List Tile Tapped");
           }
-          context.pushNamed(RouteConstants.buttonsScreen);
+          context.pushNamed(route);
         },
       ),
     );

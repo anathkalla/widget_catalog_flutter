@@ -2,7 +2,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
 import '../../global/global.dart';
-import '../SnackBar/custom_snackbar.dart';
+import '../Communication/SnackBar/custom_snackbar.dart';
 
 class CsElevatedButton extends StatelessWidget {
   const CsElevatedButton({super.key});

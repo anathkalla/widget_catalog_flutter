@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import '../../data/mock_list_items.dart';
 import '../../global/global.dart';
-import '../SnackBar/custom_snackbar.dart';
+import '../Communication/SnackBar/custom_snackbar.dart';
 
 class CsToggleButton extends StatefulWidget {
   const CsToggleButton({super.key});

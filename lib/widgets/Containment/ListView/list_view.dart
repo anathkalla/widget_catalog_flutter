@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../data/mock_list_items.dart';
+import '../../../data/mock_list_items.dart';
 import 'list_tile.dart';
 
 class CsListView extends StatelessWidget {
@@ -22,6 +22,7 @@ class CsListView extends StatelessWidget {
         return WidgetListItem(
           index: index,
           listTitle: widgetsList[index],
+          route: widgetsList[index],
         );
       },
       separatorBuilder: (context, index) {

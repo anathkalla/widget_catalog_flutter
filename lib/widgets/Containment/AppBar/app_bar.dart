@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../../global/global.dart';
+import '../../../global/global.dart';
 
 class CsAppBar extends StatelessWidget implements PreferredSizeWidget {
   final String title;
