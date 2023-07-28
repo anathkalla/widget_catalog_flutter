@@ -30,6 +30,7 @@ class Stringof {
   static const wCheckBox = "Toggle Button";
   static const wOutlinedtextField = "Outlined Text Field";
   static const wTextField = "Text Field";
+  static const wRadioButton = "Radio Input";
 
   // Font Family
 

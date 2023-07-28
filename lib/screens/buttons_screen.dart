@@ -56,7 +56,7 @@ class ButtonsScreen extends StatelessWidget {
               ],
             ),
             CsToggleButton(),
-            Text(Stringof.wSegmentedButton),
+            Text(Stringof.wToggleButton),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [CsPopupMenu(), Text(Stringof.wPopUpMenuButton)],
