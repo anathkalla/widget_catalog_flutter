@@ -1,11 +1,10 @@
 import 'package:flutter/material.dart';
 import '../global/global.dart';
-import '../list_view_items.dart';
 import '../utils/custom_snackbar.dart';
+import '../widgets/list_view.dart';
 
 class MyHomePage extends StatelessWidget {
-  final String title;
-  const MyHomePage({super.key, required this.title});
+  const MyHomePage({super.key});
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -22,28 +21,14 @@ class MyHomePage extends StatelessWidget {
             context: context,
             bgColor: Colorof.secondaryColor,
             message: Stringof.wfab,
-            elevation: 5.0,
-            insetMargin: 20.0,
+            elevation: Sizeof.sSnackBarElevation,
+            insetMargin: Sizeof.sSnackBarMargin,
           );
         },
         child: const Icon(Icons.add),
       ),
-      body: ListView.separated(
-        itemCount: widgetsList.length,
-        // reverse: false,
-        // itemExtent: 100,
-        scrollDirection: Axis.vertical,
-        itemBuilder: (context, index) {
-          return WidgetListItem(
-            index: index,
-            listTitle: widgetsList[index],
-          );
-        },
-        separatorBuilder: (context, index) {
-          return const Divider(
-            height: 20,
-          );
-        },
+      body: CustonListView(
+        context: context,
       ),
     );
   }

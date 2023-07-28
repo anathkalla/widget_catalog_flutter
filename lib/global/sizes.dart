@@ -7,9 +7,14 @@
 class Sizeof {
   Sizeof._();
 
-  static const mainPadding = 10.0;
-  static const regularFont = 16.0;
   static const appTitle = 20.0;
-  static const snackBarElevation = 5.0;
-  static const snackBarMargin = 20.0;
+
+  static const mainPadding = 10.0;
+
+  // Font Size
+  static const regularFont = 16.0;
+
+  // Snackbar Dimens
+  static const sSnackBarElevation = 5.0;
+  static const sSnackBarMargin = 20.0;
 }
