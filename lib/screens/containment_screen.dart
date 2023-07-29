@@ -3,6 +3,8 @@ import '../widgets/Containment/Cards/outlined_card.dart';
 import '../widgets/Containment/Dialogs/alert_dialog.dart';
 import '../widgets/Containment/Dialogs/basic_dialog.dart';
 import '../widgets/Containment/Dialogs/full_screen_dialog.dart';
+import '../widgets/Containment/ToolTip/plain_tooltip.dart';
+import '../widgets/Containment/ToolTip/rich_tooltip.dart';
 import '../widgets/Sizing/sized_box.dart';
 import '../widgets/Containment/AppBar/app_bar.dart';
 import '../global/global.dart';
@@ -45,7 +47,15 @@ class ContainmentWidgets extends StatelessWidget {
               CsSizedBox(
                 height: sizedBoxHeight,
               ),
-              CsFullScreenDialog()
+              CsFullScreenDialog(),
+              CsSizedBox(
+                height: sizedBoxHeight,
+              ),
+              CsPlainTooltip(),
+              CsSizedBox(
+                height: sizedBoxHeight,
+              ),
+              CsRichTooltip()
             ],
           ),
         ),
