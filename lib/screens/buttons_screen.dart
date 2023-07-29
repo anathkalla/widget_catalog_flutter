@@ -12,7 +12,7 @@ import '../widgets/Buttons/outlined_button.dart';
 import '../widgets/Buttons/segmented_button.dart';
 import '../widgets/Buttons/text_button.dart';
 import '../widgets/Buttons/toggle_button.dart';
-import '../widgets/Containment/SizeWidgets/custom_sized_box.dart';
+import '../widgets/Sizing/sized_box.dart';
 
 class ButtonsScreen extends StatelessWidget {
   const ButtonsScreen({

@@ -26,6 +26,11 @@ class Stringof {
   static const wToggleButton = "Toggle Button";
   static const wPopUpMenuButton = "PopUp Menu Button";
 
+  // Images URL's
+
+  static const imgSunset = "images/sunset.jpg";
+  static const imgRiver = "images/river.jpg";
+  static const imgCamping = "images/camping.jpg";
   // Inputs
   static const wCheckBox = "Toggle Button";
   static const wOutlinedtextField = "Outlined Text Field";
