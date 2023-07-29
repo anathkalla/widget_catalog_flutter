@@ -4,7 +4,7 @@ import '../../screens/containment_screen.dart';
 import '../../screens/inputs_screen.dart';
 import '../../screens/navigation_screen.dart';
 import '../../screens/buttons_screen.dart';
-import '../../screens/communicarion_screen.dart';
+import '../../screens/communication_screen.dart';
 import '../../screens/home_page.dart';
 import '../../screens/page_not_found.dart';
 import 'routes_constants.dart';
