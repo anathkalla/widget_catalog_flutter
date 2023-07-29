@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
-import 'package:widget_catalog_flutter/screens/containment_screen.dart';
-import 'package:widget_catalog_flutter/screens/inputs_screen.dart';
-
+import '../../screens/containment_screen.dart';
+import '../../screens/inputs_screen.dart';
+import '../../screens/navigation_screen.dart';
 import '../../screens/buttons_screen.dart';
+import '../../screens/communicarion_screen.dart';
 import '../../screens/home_page.dart';
 import '../../screens/page_not_found.dart';
 import 'routes_constants.dart';
@@ -37,6 +38,20 @@ class AppRouter {
         name: RouteConstants.containmentScreen,
         pageBuilder: (context, state) {
           return const MaterialPage(child: ContainmentWidgets());
+        },
+      ),
+      GoRoute(
+        path: '/navigation',
+        name: RouteConstants.navigationScreen,
+        pageBuilder: (context, state) {
+          return const MaterialPage(child: NavigationScreen());
+        },
+      ),
+      GoRoute(
+        path: '/communication',
+        name: RouteConstants.communicationScreen,
+        pageBuilder: (context, state) {
+          return const MaterialPage(child: CommunicationScreen());
         },
       ),
     ],
