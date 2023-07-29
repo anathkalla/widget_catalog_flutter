@@ -1,6 +1,12 @@
 import 'package:flutter/material.dart';
 
-final List widgetsList = ['Buttons', 'Texts', 'Inputs'];
+final List widgetsList = [
+  'buttons',
+  'inputs',
+  'navigation',
+  'containment',
+  'communication'
+];
 
 const List<Widget> iconsList = <Widget>[
   Icon(Icons.male_rounded),

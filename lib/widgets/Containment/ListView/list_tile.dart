@@ -1,20 +1,19 @@
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
-import '../../global/global.dart';
-import '../../router/routes/routes_constants.dart';
+import '../../../global/global.dart';
 
 class WidgetListItem extends StatelessWidget {
   final int index;
   final String listTitle;
   static const String listSubTitle = "Widget";
+  final String route;
 
-  const WidgetListItem({
-    super.key,
-    required this.index,
-    required this.listTitle,
-  });
+  const WidgetListItem(
+      {super.key,
+      required this.index,
+      required this.listTitle,
+      required this.route});
 
   @override
   Widget build(BuildContext context) {
@@ -25,25 +24,18 @@ class WidgetListItem extends StatelessWidget {
         selectedColor: Colors.white,
         leading: const SizedBox(
           width: 40,
-          child: Placeholder(),
+          child: FlutterLogo(),
         ),
         title: Text(
-          listTitle,
+          listTitle.toUpperCase(),
           textAlign: TextAlign.center,
         ),
         subtitle: const Text(
           listSubTitle,
           textAlign: TextAlign.center,
         ),
-        trailing: const Icon(
-          Icons.arrow_forward_rounded,
-          color: Colorof.secondaryColor,
-        ),
         onTap: () {
-          if (kDebugMode) {
-            print("List Tile Tapped");
-          }
-          context.pushNamed(RouteConstants.buttonsScreen);
+          context.pushNamed(route);
         },
       ),
     );

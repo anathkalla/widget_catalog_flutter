@@ -9,8 +9,10 @@ class Stringof {
 
   static const appTitle = "WIDGET CATALOG";
   static const buttons = "BUTTONS";
+  static const inputs = "INPUTS";
   static const notFound = "Error Screen";
 
+  // Buttons
   static const wfab = "Floating Action Buttom";
   static const wAppBar = "App Bar";
   static const wElevatedButton = "Elevated Button";
@@ -22,6 +24,19 @@ class Stringof {
   static const wIconButton = "Icon Button";
   static const wSegmentedButton = "Segmented Button";
   static const wToggleButton = "Toggle Button";
+  static const wPopUpMenuButton = "PopUp Menu Button";
+
+  // Inputs
+  static const wCheckBox = "Toggle Button";
+  static const wOutlinedtextField = "Outlined Text Field";
+  static const wTextField = "Text Field";
+  static const wRadioButton = "Radio Input";
+  static const wDatePicker = "Date Picker";
+  static const wTimePicker = "Time Picker";
+  static const wSwitch = "Switch input";
+  static const wSlider = "Slider input";
+  static const wChips = "Chips input";
+  static const wFilterChip = "Filter Chip input";
 
   // Font Family
 

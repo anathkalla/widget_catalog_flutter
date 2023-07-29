@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import '../global/global.dart';
-import '../widgets/AppBar/app_bar.dart';
+import '../widgets/Buttons/pop_up_menu_button.dart';
+import '../widgets/Containment/AppBar/app_bar.dart';
 import '../widgets/Buttons/disabled_button.dart';
 import '../widgets/Buttons/elevated_button.dart';
 import '../widgets/Buttons/filled_button.dart';
@@ -11,7 +12,7 @@ import '../widgets/Buttons/outlined_button.dart';
 import '../widgets/Buttons/segmented_button.dart';
 import '../widgets/Buttons/text_button.dart';
 import '../widgets/Buttons/toggle_button.dart';
-import '../widgets/SizeWidgets/custom_sized_box.dart';
+import '../widgets/Containment/SizeWidgets/custom_sized_box.dart';
 
 class ButtonsScreen extends StatelessWidget {
   const ButtonsScreen({
@@ -21,10 +22,10 @@ class ButtonsScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     const double sizedBoxHeight = 10;
-    return Scaffold(
+    return const Scaffold(
       appBar: CsAppBar(title: Stringof.buttons),
-      floatingActionButton: const CsFloatingActionButton(),
-      body: const Center(
+      floatingActionButton: CsFloatingActionButton(),
+      body: Center(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
           mainAxisAlignment: MainAxisAlignment.start,
@@ -54,7 +55,12 @@ class ButtonsScreen extends StatelessWidget {
                 Text(Stringof.wSegmentedButton),
               ],
             ),
-            CsToggleButton()
+            CsToggleButton(),
+            Text(Stringof.wToggleButton),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [CsPopupMenu(), Text(Stringof.wPopUpMenuButton)],
+            ),
           ],
         ),
       ),
