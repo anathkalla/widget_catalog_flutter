@@ -52,10 +52,12 @@ class InputsScreen extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [CsSlider(), Text(Stringof.wSlider)],
           ),
-          CsFilterChip()
+          CsFilterChip(),
         ],
       ),
     );
   }
 }
+
+
 // https://api.flutter.dev/flutter/material/FilterChip-class.html

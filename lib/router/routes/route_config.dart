@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
+import 'package:widget_catalog_flutter/screens/containment_screen.dart';
 import 'package:widget_catalog_flutter/screens/inputs_screen.dart';
 
 import '../../screens/buttons_screen.dart';
@@ -29,6 +30,13 @@ class AppRouter {
         name: RouteConstants.inputsScreen,
         pageBuilder: (context, state) {
           return const MaterialPage(child: InputsScreen());
+        },
+      ),
+      GoRoute(
+        path: '/containment',
+        name: RouteConstants.containmentScreen,
+        pageBuilder: (context, state) {
+          return const MaterialPage(child: ContainmentWidgets());
         },
       ),
     ],
