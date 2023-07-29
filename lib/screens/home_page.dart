@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:widget_catalog_flutter/global/global.dart';
-import '../widgets/Containment/AppBar/app_bar.dart';
+import '../widgets/Navigation/AppBar/app_bar.dart';
 import '../widgets/Containment/ListView/list_view.dart';
 
 class MyHomePage extends StatelessWidget {

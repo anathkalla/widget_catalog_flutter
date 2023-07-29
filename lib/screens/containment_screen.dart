@@ -6,7 +6,7 @@ import '../widgets/Containment/Dialogs/full_screen_dialog.dart';
 import '../widgets/Containment/ToolTip/plain_tooltip.dart';
 import '../widgets/Containment/ToolTip/rich_tooltip.dart';
 import '../widgets/Sizing/sized_box.dart';
-import '../widgets/Containment/AppBar/app_bar.dart';
+import '../widgets/Navigation/AppBar/app_bar.dart';
 import '../global/global.dart';
 import '../widgets/Containment/Cards/elevated_card.dart';
 import '../widgets/Containment/Cards/filled_card.dart';
