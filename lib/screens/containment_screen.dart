@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 import '../widgets/Containment/Cards/outlined_card.dart';
+import '../widgets/Containment/Dialogs/alert_dialog.dart';
+import '../widgets/Containment/Dialogs/basic_dialog.dart';
+import '../widgets/Containment/Dialogs/full_screen_dialog.dart';
 import '../widgets/Sizing/sized_box.dart';
 import '../widgets/Containment/AppBar/app_bar.dart';
 import '../global/global.dart';
@@ -30,7 +33,19 @@ class ContainmentWidgets extends StatelessWidget {
               CsSizedBox(
                 height: sizedBoxHeight,
               ),
-              CsOutlinedCard()
+              CsOutlinedCard(),
+              CsSizedBox(
+                height: sizedBoxHeight,
+              ),
+              CsBasicDialog(),
+              CsSizedBox(
+                height: sizedBoxHeight,
+              ),
+              CsAlertDialog(),
+              CsSizedBox(
+                height: sizedBoxHeight,
+              ),
+              CsFullScreenDialog()
             ],
           ),
         ),
