@@ -9,8 +9,13 @@ class MyHomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: const CsAppBar(title: Stringof.appTitle),
-      body: CsListView(
-        context: context,
+      body: Center(
+        child: SizedBox(
+          width: 400,
+          child: CsListView(
+            context: context,
+          ),
+        ),
       ),
     );
   }
