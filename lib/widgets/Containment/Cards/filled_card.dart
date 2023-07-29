@@ -11,9 +11,13 @@ class CsFilledCard extends StatelessWidget {
   const CsFilledCard(
       {super.key,
       this.cardElevation = 0,
-      this.cardColor = Colorof.secondaryLightColor,
-      this.cardChild = const Center(child: Text('Filled Card')),
-      this.cardHeight = 200,
+      this.cardColor = Colorof.secondaryColor,
+      this.cardChild = const Center(
+          child: Text(
+        'Filled Card',
+        style: TextStyle(color: Colorof.textLight),
+      )),
+      this.cardHeight = 100,
       this.cardWidth = 300});
 
   @override

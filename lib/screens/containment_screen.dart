@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../widgets/Containment/Cards/outlined_card.dart';
 import '../widgets/Sizing/sized_box.dart';
 import '../widgets/Containment/AppBar/app_bar.dart';
 import '../global/global.dart';
@@ -13,20 +14,26 @@ class ContainmentWidgets extends StatelessWidget {
     const double sizedBoxHeight = 10;
     return Scaffold(
       appBar: const CsAppBar(title: Stringof.appTitle),
-      body: ListView(
-        children: const [
-          CsSizedBox(
-            height: sizedBoxHeight,
+      body: Center(
+        child: SizedBox(
+          width: 600,
+          child: ListView(
+            children: const [
+              CsSizedBox(
+                height: sizedBoxHeight,
+              ),
+              CsElevatedCard(),
+              CsSizedBox(
+                height: sizedBoxHeight,
+              ),
+              CsFilledCard(),
+              CsSizedBox(
+                height: sizedBoxHeight,
+              ),
+              CsOutlinedCard()
+            ],
           ),
-          CsElevatedCard(),
-          CsSizedBox(
-            height: sizedBoxHeight,
-          ),
-          CsFilledCard(),
-          CsSizedBox(
-            height: sizedBoxHeight,
-          ),
-        ],
+        ),
       ),
     );
   }

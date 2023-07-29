@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import '../../../global/global.dart';
 
-class CsFilledCard extends StatelessWidget {
+class CsOutlinedCard extends StatelessWidget {
   final double cardHeight;
   final double cardWidth;
   final double cardElevation;
@@ -10,7 +10,7 @@ class CsFilledCard extends StatelessWidget {
   final Widget cardChild;
   final double cardBorderRadius;
 
-  const CsFilledCard(
+  const CsOutlinedCard(
       {super.key,
       this.cardElevation = 0,
       this.cardColor = Colorof.secondaryLightColor,

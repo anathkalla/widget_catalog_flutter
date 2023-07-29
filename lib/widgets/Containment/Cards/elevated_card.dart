@@ -7,8 +7,8 @@ class CsElevatedCard extends StatelessWidget {
 
   const CsElevatedCard({
     super.key,
-    this.cardHeight = 300,
-    this.cardWidth = 100,
+    this.cardHeight = 100,
+    this.cardWidth = 300,
     this.childWidget = const Center(child: Text('Elevated Card')),
   });
 
