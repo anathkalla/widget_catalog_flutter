@@ -14,6 +14,7 @@ class CsSizedBox extends StatelessWidget {
   Widget build(BuildContext context) {
     return SizedBox(
       height: height,
+      width: width,
     );
   }
 }

@@ -10,9 +10,11 @@ class CsAssetImage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Image(
-      image: AssetImage("images/sunset.jpg"),
+    return Image(
+      image: AssetImage(imageUrl),
       fit: BoxFit.cover,
     );
   }
 }
+
+//write a unit test to test appbar in flutter?
