@@ -5,6 +5,7 @@ import 'package:widget_catalog_flutter/widgets/Sizing/sized_box.dart';
 
 import '../global/global.dart';
 import '../widgets/Containment/Image/asset_image.dart';
+import '../widgets/Sizing/padding.dart';
 
 //create a flutter image asset widget>?
 
@@ -14,6 +15,9 @@ class ViewFile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final screenHeight = MediaQuery.of(context).size.height * 0.65;
+
+    const paddingSize = 8.0;
+
     return Padding(
       padding: const EdgeInsets.all(8.0),
       child: Column(
@@ -21,9 +25,9 @@ class ViewFile extends StatelessWidget {
           Container(
             color: Colorof.secondaryColor.withOpacity(0.6),
             height: screenHeight,
-            child: const Padding(
-              padding: EdgeInsets.all(8.0),
-              child: CsAssetImage(
+            child: const CsPaddingAll(
+              all: paddingSize,
+              childWidget: CsAssetImage(
                 imageUrl: Stringof.imgSunset,
               ),
             ),
