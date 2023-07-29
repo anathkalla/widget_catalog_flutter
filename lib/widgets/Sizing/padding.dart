@@ -6,8 +6,8 @@ class CsPaddingAll extends StatelessWidget {
 
   const CsPaddingAll({
     super.key,
-    required this.all,
-    required this.childWidget,
+    this.all = 8.0,
+    this.childWidget = const SizedBox(),
   });
 
   @override
