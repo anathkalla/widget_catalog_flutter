@@ -1,12 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
-import '../../screens/containment_screen.dart';
-import '../../screens/inputs_screen.dart';
-import '../../screens/navigation_screen.dart';
-import '../../screens/buttons_screen.dart';
-import '../../screens/communication_screen.dart';
-import '../../screens/home_page.dart';
-import '../../screens/page_not_found.dart';
+import 'package:widget_catalog_flutter/presentation/screens/splash_screen.dart';
+import '../../presentation/screens/containment_screen.dart';
+import '../../presentation/screens/inputs_screen.dart';
+import '../../presentation/screens/navigation_screen.dart';
+import '../../presentation/screens/buttons_screen.dart';
+import '../../presentation/screens/communication_screen.dart';
+import '../../presentation/screens/home_page.dart';
+import '../../presentation/screens/page_not_found.dart';
 import 'routes_constants.dart';
 
 class AppRouter {
@@ -14,6 +15,13 @@ class AppRouter {
     routes: [
       GoRoute(
         path: '/',
+        name: RouteConstants.splashScreen,
+        pageBuilder: (context, state) {
+          return const MaterialPage(child: SplashScreen());
+        },
+      ),
+      GoRoute(
+        path: '/home',
         name: RouteConstants.homeScreen,
         pageBuilder: (context, state) {
           return const MaterialPage(child: MyHomePage());

@@ -1,4 +1,5 @@
 class RouteConstants {
+  static const String splashScreen = 'splash';
   static const String homeScreen = 'home';
   static const String buttonsScreen = 'buttons';
   static const String inputsScreen = 'inputs';

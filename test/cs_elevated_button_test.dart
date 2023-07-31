@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:widget_catalog_flutter/widgets/Buttons/elevated_button.dart';
+import 'package:widget_catalog_flutter/presentation/widgets/Buttons/elevated_button.dart';
 
 void main() {
   // Create a test widget.

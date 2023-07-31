@@ -7,7 +7,7 @@
 class Stringof {
   Stringof._();
 
-  static const appTitle = "WIDGET CATALOG";
+  static const appTitle = "WIKI WIDGET CATALOG";
   static const buttons = "BUTTONS";
   static const inputs = "INPUTS";
   static const notFound = "Error Screen";
@@ -30,6 +30,7 @@ class Stringof {
   static const imgSunset = "images/sunset.jpg";
   static const imgRiver = "images/river.jpg";
   static const imgCamping = "images/camping.jpg";
+  static const imgSplash = "images/splash.png";
 
   // Inputs
   static const wCheckBox = "Toggle Button";
