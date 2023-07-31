@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import '../../../global/global.dart';
 
 class CsRichTooltip extends StatelessWidget {
   final String toolTipMessage;
@@ -16,7 +15,6 @@ class CsRichTooltip extends StatelessWidget {
     return Tooltip(
       richMessage: TextSpan(
         text: toolTipMessage,
-        style: const TextStyle(color: Colorof.textLight),
         children: const <InlineSpan>[
           TextSpan(
             text: 'This is another span of this rich tooltip',

@@ -18,8 +18,8 @@ class ViewFile extends StatelessWidget {
       padding: const EdgeInsets.all(8.0),
       child: Column(
         children: [
-          Container(
-            color: Colorof.secondaryColor.withOpacity(0.6),
+          SizedBox(
+            // color: Colorof.secondaryColor.withOpacity(0.6),
             height: screenHeight,
             child: const Padding(
               padding: EdgeInsets.all(8.0),

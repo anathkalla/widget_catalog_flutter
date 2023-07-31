@@ -5,11 +5,11 @@
 */
 
 import 'package:flutter/material.dart';
-import 'colors.dart';
+// import 'colors.dart';
 
 class Iconof {
   static Icon upArrow = const Icon(
     Icons.arrow_upward,
-    color: Colorof.primaryColor,
+    // color: Colorof.primaryColor,
   );
 }

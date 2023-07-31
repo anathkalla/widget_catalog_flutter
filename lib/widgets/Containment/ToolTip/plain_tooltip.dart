@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 
-import '../../../global/global.dart';
-
 class CsPlainTooltip extends StatelessWidget {
   final String toolTipMessage;
   final Widget toolTipChild;
@@ -26,7 +24,6 @@ class CsPlainTooltip extends StatelessWidget {
       height: 10,
       padding: const EdgeInsets.all(8.0),
       preferBelow: false,
-      textStyle: const TextStyle(fontSize: 12, color: Colorof.textLight),
       showDuration: const Duration(seconds: 2),
       waitDuration: const Duration(seconds: 1),
       child: toolTipChild,

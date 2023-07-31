@@ -61,12 +61,12 @@ class _CsBottomNavigationBarState extends State<CsBottomNavigationBar> {
           BottomNavigationBarItem(
             icon: Icon(Icons.school),
             label: 'Wiki',
-            backgroundColor: Colorof.primaryColor,
+            backgroundColor: Colorof.accentColor,
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.settings),
             label: 'Settings',
-            backgroundColor: Colorof.secondaryColor,
+            backgroundColor: Colorof.textDark,
           ),
         ],
         currentIndex: _selectedIndex,

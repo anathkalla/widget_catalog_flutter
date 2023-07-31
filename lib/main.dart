@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp.router(
       title: 'Wiki - Flutter Catalog',
-      themeMode: ThemeMode.dark,
+      themeMode: ThemeMode.light,
       theme: ThemeData(
           useMaterial3: isUsingMaterial3, colorScheme: lightColorScheme),
       darkTheme: ThemeData(

@@ -10,7 +10,6 @@ class CsFloatingActionButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return FloatingActionButton(
-      backgroundColor: Colorof.accentColor,
       onPressed: () {
         CsSnackBar.buildSnackbar(
           context: context,
