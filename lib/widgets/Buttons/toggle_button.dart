@@ -31,10 +31,6 @@ class _CsToggleButtonState extends State<CsToggleButton> {
         });
       },
       borderRadius: const BorderRadius.all(Radius.circular(8)),
-      selectedBorderColor: Colorof.primaryColor,
-      selectedColor: Colors.white,
-      fillColor: Colorof.primaryColor,
-      color: Colorof.primaryColor,
       isSelected: _selectedToggleList,
       children: iconsList,
     );

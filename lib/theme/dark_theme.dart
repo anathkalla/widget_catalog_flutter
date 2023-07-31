@@ -1,9 +1,35 @@
 import 'package:flutter/material.dart';
 
-import '../global/global.dart';
-
-ThemeData darkTheme = ThemeData(
+const darkColorScheme = ColorScheme(
   brightness: Brightness.dark,
-  useMaterial3: true,
-  colorSchemeSeed: Colorof.primaryColor,
+  primary: Color(0xFF4DDAD8),
+  onPrimary: Color(0xFF003736),
+  primaryContainer: Color(0xFF00504F),
+  onPrimaryContainer: Color(0xFF6FF7F4),
+  secondary: Color(0xFF54DDB1),
+  onSecondary: Color(0xFF003829),
+  secondaryContainer: Color(0xFF00513C),
+  onSecondaryContainer: Color(0xFF74FACC),
+  tertiary: Color(0xFFF8BE00),
+  onTertiary: Color(0xFF3F2E00),
+  tertiaryContainer: Color(0xFF5A4300),
+  onTertiaryContainer: Color(0xFFFFDF9A),
+  error: Color(0xFFFFB4AB),
+  errorContainer: Color(0xFF93000A),
+  onError: Color(0xFF690005),
+  onErrorContainer: Color(0xFFFFDAD6),
+  background: Color(0xFF191C1C),
+  onBackground: Color(0xFFE0E3E2),
+  surface: Color(0xFF191C1C),
+  onSurface: Color(0xFFE0E3E2),
+  surfaceVariant: Color(0xFF3F4948),
+  onSurfaceVariant: Color(0xFFBEC9C8),
+  outline: Color(0xFF889392),
+  onInverseSurface: Color(0xFF191C1C),
+  inverseSurface: Color(0xFFE0E3E2),
+  inversePrimary: Color(0xFF006A69),
+  shadow: Color(0xFF000000),
+  surfaceTint: Color(0xFF4DDAD8),
+  outlineVariant: Color(0xFF3F4948),
+  scrim: Color(0xFF000000),
 );

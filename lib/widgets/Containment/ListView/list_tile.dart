@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
-import '../../../global/global.dart';
-
 class WidgetListItem extends StatelessWidget {
   final int index;
   final String listTitle;
@@ -19,9 +17,6 @@ class WidgetListItem extends StatelessWidget {
   Widget build(BuildContext context) {
     return Card(
       child: ListTile(
-        selectedTileColor: Colorof.secondaryColor,
-        tileColor: Colorof.secondaryLightColor,
-        selectedColor: Colors.white,
         leading: const SizedBox(
           width: 40,
           child: FlutterLogo(),

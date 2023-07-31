@@ -12,7 +12,6 @@ class CsIconButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return IconButton(
       icon: const Icon(Icons.account_balance_wallet_rounded),
-      color: Colorof.secondaryColor,
       onPressed: () => {
         CsSnackBar.buildSnackbar(
           context: context,
