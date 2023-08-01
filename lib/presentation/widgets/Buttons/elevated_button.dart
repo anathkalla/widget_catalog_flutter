@@ -1,11 +1,12 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
-import '../../../global/global.dart';
 import '../Communication/SnackBar/custom_snackbar.dart';
 
 class CsElevatedButton extends StatelessWidget {
-  const CsElevatedButton({super.key});
+  final String btnTitle;
+
+  const CsElevatedButton({super.key, this.btnTitle = "Elevated Button"});
 
   @override
   Widget build(BuildContext context) {
@@ -17,13 +18,13 @@ class CsElevatedButton extends StatelessWidget {
       onPressed: () {
         CsSnackBar.buildSnackbar(
           context: context,
-          message: Stringof.wElevatedButton,
+          message: btnTitle,
         );
         if (kDebugMode) {
           print('Button Clicked');
         }
       },
-      child: const Text(Stringof.wElevatedButton),
+      child: Text(btnTitle),
     );
   }
 }

@@ -13,23 +13,32 @@ class CsListView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ListView.separated(
-      itemCount: widgetsList.length,
-      // reverse: false,
-      // itemExtent: 100,
-      scrollDirection: Axis.vertical,
-      itemBuilder: (context, index) {
-        return WidgetListItem(
-          index: index,
-          listTitle: widgetsList[index],
-          route: widgetsList[index],
-        );
-      },
-      separatorBuilder: (context, index) {
-        return const SizedBox(
-          height: 5,
-        );
-      },
+    return Column(
+      children: [
+        const SizedBox(
+          height: 20,
+        ),
+        Expanded(
+          child: ListView.separated(
+            itemCount: widgetsList.length,
+            // reverse: false,
+            // itemExtent: 100,
+            scrollDirection: Axis.vertical,
+            itemBuilder: (context, index) {
+              return WidgetListItem(
+                index: index,
+                listTitle: widgetsList[index],
+                route: widgetsList[index],
+              );
+            },
+            separatorBuilder: (context, index) {
+              return const SizedBox(
+                height: 5,
+              );
+            },
+          ),
+        ),
+      ],
     );
   }
 }

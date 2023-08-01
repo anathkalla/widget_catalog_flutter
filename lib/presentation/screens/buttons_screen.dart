@@ -22,42 +22,47 @@ class ButtonsScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     const double sizedBoxHeight = 10;
-    return const Scaffold(
-      appBar: CsAppBar(title: Stringof.buttons),
-      floatingActionButton: CsFloatingActionButton(),
+    return Scaffold(
+      appBar: const CsAppBar(title: Stringof.buttons),
+      floatingActionButton: const CsFloatingActionButton(),
       body: Center(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
           mainAxisAlignment: MainAxisAlignment.start,
           children: [
-            CsSizedBox(height: sizedBoxHeight),
-            CsElevatedButton(),
-            CsSizedBox(height: sizedBoxHeight),
-            CsDisabledButton(),
-            CsSizedBox(height: sizedBoxHeight),
-            CsOutlinedButton(),
-            CsSizedBox(height: sizedBoxHeight),
-            CsFilledButton(),
-            CsSizedBox(height: sizedBoxHeight),
-            CsFilledButtonTonal(),
-            CsSizedBox(height: sizedBoxHeight),
-            CsTextButton(),
-            Row(
+            const SizedBox(
+              height: 30,
+            ),
+            const CsSizedBox(height: sizedBoxHeight),
+            const CsElevatedButton(),
+            const CsSizedBox(height: sizedBoxHeight),
+            const CsDisabledButton(),
+            const CsSizedBox(height: sizedBoxHeight),
+            CsOutlinedButton(
+              onBtnPressed: () => const Text("Btn Pressed"),
+            ),
+            const CsSizedBox(height: sizedBoxHeight),
+            CsFilledButton(onBtnPressed: () => const Text("Btn Pressed")),
+            const CsSizedBox(height: sizedBoxHeight),
+            const CsFilledButtonTonal(),
+            const CsSizedBox(height: sizedBoxHeight),
+            CsTextButton(onBtnPressed: () => const Text("Btn Pressed")),
+            const Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 CsIconButton(),
                 Text(Stringof.wIconButton),
               ],
             ),
-            Column(
+            const Column(
               children: [
                 CsSegmentedButton(),
                 Text(Stringof.wSegmentedButton),
               ],
             ),
-            CsToggleButton(),
-            Text(Stringof.wToggleButton),
-            Row(
+            const CsToggleButton(),
+            const Text(Stringof.wToggleButton),
+            const Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [CsPopupMenu(), Text(Stringof.wPopUpMenuButton)],
             ),

@@ -1,23 +1,22 @@
 import 'package:flutter/material.dart';
 
 import '../../../global/global.dart';
-import '../Communication/SnackBar/custom_snackbar.dart';
 
 class CsFilledButton extends StatelessWidget {
+  final String btnTitle;
+  final VoidCallback onBtnPressed;
+
   const CsFilledButton({
     super.key,
+    this.btnTitle = Stringof.wFilledButton,
+    required this.onBtnPressed,
   });
 
   @override
   Widget build(BuildContext context) {
     return FilledButton(
-      onPressed: () => {
-        CsSnackBar.buildSnackbar(
-          context: context,
-          message: Stringof.wFilledButton,
-        )
-      },
-      child: const Text(Stringof.wFilledButton),
+      onPressed: onBtnPressed,
+      child: Text(btnTitle),
     );
   }
 }

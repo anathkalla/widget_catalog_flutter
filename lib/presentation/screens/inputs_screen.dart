@@ -28,15 +28,22 @@ class InputsScreen extends StatelessWidget {
             children: [CsCheckbox(), Text(Stringof.wCheckBox)],
           ),
           CsSizedBox(height: sizedBoxHeight),
-          CsOutlinedTextField(),
+          Padding(
+              padding: EdgeInsets.symmetric(horizontal: 100),
+              child: CsOutlinedTextField()),
           CsSizedBox(height: sizedBoxHeight),
           Column(
             children: [CsTextField(), Text(Stringof.wTextField)],
           ),
           CsSizedBox(height: sizedBoxHeight),
-          Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [CsRadioInput(), Text(Stringof.wRadioButton)],
+          Center(
+            child: SizedBox(
+              width: 300,
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [CsRadioInput(), Text(Stringof.wRadioButton)],
+              ),
+            ),
           ),
           CsSizedBox(height: sizedBoxHeight),
           CsDatePicker(),
@@ -58,6 +65,3 @@ class InputsScreen extends StatelessWidget {
     );
   }
 }
-
-
-// https://api.flutter.dev/flutter/material/FilterChip-class.html

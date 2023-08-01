@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
-import 'package:widget_catalog_flutter/presentation/screens/splash_screen.dart';
+import 'package:widget_catalog_flutter/presentation/screens/intro/intro_screen_one.dart';
+import 'package:widget_catalog_flutter/presentation/screens/intro/intro_screen_three.dart';
+import 'package:widget_catalog_flutter/presentation/screens/intro/intro_screen_two.dart';
+import 'package:widget_catalog_flutter/presentation/screens/intro/splash_screen.dart';
 import '../../presentation/screens/containment_screen.dart';
 import '../../presentation/screens/inputs_screen.dart';
 import '../../presentation/screens/navigation_screen.dart';
@@ -18,6 +21,27 @@ class AppRouter {
         name: RouteConstants.splashScreen,
         pageBuilder: (context, state) {
           return const MaterialPage(child: SplashScreen());
+        },
+      ),
+      GoRoute(
+        path: '/intro-one',
+        name: RouteConstants.introScreenOne,
+        pageBuilder: (context, state) {
+          return const MaterialPage(child: IntroScreenOne());
+        },
+      ),
+      GoRoute(
+        path: '/intro-two',
+        name: RouteConstants.introScreenTwo,
+        pageBuilder: (context, state) {
+          return const MaterialPage(child: IntroScreenTwo());
+        },
+      ),
+      GoRoute(
+        path: '/intro-last',
+        name: RouteConstants.introScreenLast,
+        pageBuilder: (context, state) {
+          return const MaterialPage(child: IntroScreenThree());
         },
       ),
       GoRoute(
