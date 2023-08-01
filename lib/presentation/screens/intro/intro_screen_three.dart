@@ -26,7 +26,7 @@ class IntroScreenThree extends StatelessWidget {
                 height: 35,
                 width: 300,
                 child: CsFilledButton(
-                  btnTitle: "Complete",
+                  btnTitle: "Completed",
                   onBtnPressed: () => context.pushNamed('home'),
                 ),
               ),
@@ -37,3 +37,5 @@ class IntroScreenThree extends StatelessWidget {
     );
   }
 }
+
+// is it possible to run chrome inside vs code?

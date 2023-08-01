@@ -1,16 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
-import 'package:widget_catalog_flutter/presentation/screens/intro/intro_screen_one.dart';
-import 'package:widget_catalog_flutter/presentation/screens/intro/intro_screen_three.dart';
-import 'package:widget_catalog_flutter/presentation/screens/intro/intro_screen_two.dart';
-import 'package:widget_catalog_flutter/presentation/screens/intro/splash_screen.dart';
-import '../../presentation/screens/containment_screen.dart';
-import '../../presentation/screens/inputs_screen.dart';
-import '../../presentation/screens/navigation_screen.dart';
-import '../../presentation/screens/buttons_screen.dart';
-import '../../presentation/screens/communication_screen.dart';
+import '../../presentation/screens/catalog/containment_screen.dart';
+import '../../presentation/screens/error/error_page_not_found.dart';
+import '../../presentation/screens/catalog/inputs_screen.dart';
+import '../../presentation/screens/intro/intro_screen_one.dart';
+import '../../presentation/screens/intro/intro_screen_three.dart';
+import '../../presentation/screens/intro/intro_screen_two.dart';
+import '../../presentation/screens/intro/splash_screen.dart';
+import '../../presentation/screens/catalog/navigation_screen.dart';
+import '../../presentation/screens/catalog/buttons_screen.dart';
+import '../../presentation/screens/catalog/communication_screen.dart';
 import '../../presentation/screens/home_page.dart';
-import '../../presentation/screens/page_not_found.dart';
 import 'routes_constants.dart';
 
 class AppRouter {
@@ -88,7 +88,7 @@ class AppRouter {
       ),
     ],
     errorPageBuilder: (context, state) {
-      return const MaterialPage(child: PageNotFound());
+      return const MaterialPage(child: ErrorPageNotFound());
     },
   );
 }

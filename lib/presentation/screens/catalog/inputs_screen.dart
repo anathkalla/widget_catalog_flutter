@@ -1,16 +1,16 @@
 import 'package:flutter/material.dart';
-import '../../global/global.dart';
-import '../widgets/Navigation/AppBar/app_bar.dart';
-import '../widgets/Inputs/checkbox.dart';
-import '../widgets/Inputs/chips.dart';
-import '../widgets/Inputs/date_picker.dart';
-import '../widgets/Inputs/outlined_text_field.dart';
-import '../widgets/Inputs/radio_button.dart';
-import '../widgets/Inputs/sliders.dart';
-import '../widgets/Inputs/switch.dart';
-import '../widgets/Inputs/text_field.dart';
-import '../widgets/Sizing/sized_box.dart';
-import '../widgets/Inputs/time_picker.dart';
+import '../../../global/global.dart';
+import '../../widgets/Navigation/AppBar/app_bar.dart';
+import '../../widgets/Inputs/checkbox.dart';
+import '../../widgets/Inputs/chips.dart';
+import '../../widgets/Inputs/date_picker.dart';
+import '../../widgets/Inputs/outlined_text_field.dart';
+import '../../widgets/Inputs/radio_button.dart';
+import '../../widgets/Inputs/sliders.dart';
+import '../../widgets/Inputs/switch.dart';
+import '../../widgets/Inputs/text_field.dart';
+import '../../widgets/Sizing/sized_box.dart';
+import '../../widgets/Inputs/time_picker.dart';
 
 class InputsScreen extends StatelessWidget {
   const InputsScreen({super.key});

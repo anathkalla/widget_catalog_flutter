@@ -26,7 +26,7 @@ class IntroScreenOne extends StatelessWidget {
                 fit: BoxFit.contain),
             const Spacer(),
             const SizedBox(
-                width: 300, child: CsElevatedButton(btnTitle: "Sign Up")),
+                width: 300, child: CsElevatedButton(btnTitle: "Sign Up now")),
             const SizedBox(
               height: 20,
             ),
