@@ -25,6 +25,7 @@ Clone the project and create a branch and pull request
 
 ### Communication Widgets
 
+<<<<<<< Updated upstream
 [ ] Badges
 [ ] Progress Indicator
 [ ] Snackbar
@@ -38,6 +39,20 @@ Clone the project and create a branch and pull request
 [ ] Divider
 [ ] Lists
 [ ] Tooltips
+=======
+- [x] Badges
+- [x] Progress Indicator
+- [x] Snackbar
+
+### Containment Widgets
+
+- [x] Cards
+- [x] Dialogs
+- [ ] Carousel (Not implemented yet on flutter)
+- [ ] Divider
+- [x] Lists
+- [x] Tooltips
+>>>>>>> Stashed changes
 
 ### Input Widgets
 
