@@ -1,13 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
-import 'package:widget_catalog_flutter/presentation/screens/splash_screen.dart';
-import '../../presentation/screens/containment_screen.dart';
-import '../../presentation/screens/inputs_screen.dart';
-import '../../presentation/screens/navigation_screen.dart';
-import '../../presentation/screens/buttons_screen.dart';
-import '../../presentation/screens/communication_screen.dart';
+import '../../presentation/screens/catalog/containment_screen.dart';
+import '../../presentation/screens/error/error_page_not_found.dart';
+import '../../presentation/screens/catalog/inputs_screen.dart';
+import '../../presentation/screens/intro/intro_screen_one.dart';
+import '../../presentation/screens/intro/intro_screen_three.dart';
+import '../../presentation/screens/intro/intro_screen_two.dart';
+import '../../presentation/screens/intro/splash_screen.dart';
+import '../../presentation/screens/catalog/navigation_screen.dart';
+import '../../presentation/screens/catalog/buttons_screen.dart';
+import '../../presentation/screens/catalog/communication_screen.dart';
 import '../../presentation/screens/home_page.dart';
-import '../../presentation/screens/page_not_found.dart';
 import 'routes_constants.dart';
 
 class AppRouter {
@@ -18,6 +21,27 @@ class AppRouter {
         name: RouteConstants.splashScreen,
         pageBuilder: (context, state) {
           return const MaterialPage(child: SplashScreen());
+        },
+      ),
+      GoRoute(
+        path: '/intro-one',
+        name: RouteConstants.introScreenOne,
+        pageBuilder: (context, state) {
+          return const MaterialPage(child: IntroScreenOne());
+        },
+      ),
+      GoRoute(
+        path: '/intro-two',
+        name: RouteConstants.introScreenTwo,
+        pageBuilder: (context, state) {
+          return const MaterialPage(child: IntroScreenTwo());
+        },
+      ),
+      GoRoute(
+        path: '/intro-last',
+        name: RouteConstants.introScreenLast,
+        pageBuilder: (context, state) {
+          return const MaterialPage(child: IntroScreenThree());
         },
       ),
       GoRoute(
@@ -64,7 +88,7 @@ class AppRouter {
       ),
     ],
     errorPageBuilder: (context, state) {
-      return const MaterialPage(child: PageNotFound());
+      return const MaterialPage(child: ErrorPageNotFound());
     },
   );
 }

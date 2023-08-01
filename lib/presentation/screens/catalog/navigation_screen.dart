@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../widgets/Navigation/BottomNavigationBar/bottom_navigation_bar.dart';
+import '../../widgets/Navigation/BottomNavigationBar/bottom_navigation_bar.dart';
 
 class NavigationScreen extends StatelessWidget {
   const NavigationScreen({super.key});

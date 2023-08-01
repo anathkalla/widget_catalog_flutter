@@ -30,7 +30,12 @@ class Stringof {
   static const imgSunset = "images/sunset.jpg";
   static const imgRiver = "images/river.jpg";
   static const imgCamping = "images/camping.jpg";
-  static const imgSplash = "images/splash.png";
+  static const imgSplash = "images/splash.svg";
+  static const imgSunrise = "images/sunrise.png";
+  static const imgIntroOne = "images/intro_one.svg";
+  static const imgIntroTwo = "images/intro_two.png";
+  static const imgIntroThree = "images/intro_three.png";
+  static const imgWiki = "images/wiki.svg";
 
   // Inputs
   static const wCheckBox = "Toggle Button";
@@ -45,6 +50,8 @@ class Stringof {
   static const wFilterChip = "Filter Chip input";
 
   // Font Family
-
   static const brandFont = "Kanit";
+
+  static const introTwoText =
+      "We want to make sure we are speaking your language, to help us with this, how do you like to travel?";
 }

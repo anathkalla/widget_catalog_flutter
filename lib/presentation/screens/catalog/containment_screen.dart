@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
-import '../widgets/Containment/Cards/outlined_card.dart';
-import '../widgets/Containment/Dialogs/alert_dialog.dart';
-import '../widgets/Containment/Dialogs/basic_dialog.dart';
-import '../widgets/Containment/Dialogs/full_screen_dialog.dart';
-import '../widgets/Containment/ToolTip/plain_tooltip.dart';
-import '../widgets/Containment/ToolTip/rich_tooltip.dart';
-import '../widgets/Sizing/sized_box.dart';
-import '../widgets/Navigation/AppBar/app_bar.dart';
-import '../../global/global.dart';
-import '../widgets/Containment/Cards/elevated_card.dart';
-import '../widgets/Containment/Cards/filled_card.dart';
+import '../../widgets/Containment/Cards/outlined_card.dart';
+import '../../widgets/Containment/Dialogs/alert_dialog.dart';
+import '../../widgets/Containment/Dialogs/basic_dialog.dart';
+import '../../widgets/Containment/Dialogs/full_screen_dialog.dart';
+import '../../widgets/Containment/ToolTip/plain_tooltip.dart';
+import '../../widgets/Containment/ToolTip/rich_tooltip.dart';
+import '../../widgets/Sizing/sized_box.dart';
+import '../../widgets/Navigation/AppBar/app_bar.dart';
+import '../../../global/global.dart';
+import '../../widgets/Containment/Cards/elevated_card.dart';
+import '../../widgets/Containment/Cards/filled_card.dart';
 
 class ContainmentWidgets extends StatelessWidget {
   const ContainmentWidgets({super.key});

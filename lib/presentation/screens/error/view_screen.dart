@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:widget_catalog_flutter/presentation/widgets/Buttons/disabled_button.dart';
-import 'package:widget_catalog_flutter/presentation/widgets/Buttons/elevated_button.dart';
 import 'package:widget_catalog_flutter/presentation/widgets/Sizing/sized_box.dart';
 
-import '../../global/global.dart';
-import '../widgets/Containment/Image/asset_image.dart';
+import '../../../global/global.dart';
+import '../../widgets/Buttons/elevated_button.dart';
+import '../../widgets/Containment/Image/asset_image.dart';
 
 //create a flutter image asset widget>?
 
