@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:go_router/go_router.dart';
-import 'package:widget_catalog_flutter/presentation/widgets/Buttons/ElevatedBtn/elevated_button.dart';
 import 'package:widget_catalog_flutter/presentation/widgets/Buttons/outlined_button.dart';
 
 import '../../../global/global.dart';
+import '../../widgets/Buttons/elevated_button.dart';
 
 class IntroScreenOne extends StatelessWidget {
   const IntroScreenOne({super.key});

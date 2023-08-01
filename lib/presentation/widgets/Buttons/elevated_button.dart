@@ -1,7 +1,6 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-
-import '../../Communication/SnackBar/custom_snackbar.dart';
+import '../Communication/SnackBar/custom_snackbar.dart';
 
 class CsElevatedButton extends StatelessWidget {
   final String btnTitle;
