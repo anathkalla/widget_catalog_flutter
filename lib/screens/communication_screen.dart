@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
-import '../../widgets/Communication/Badges/badge.dart';
-import '../../widgets/Communication/ProgressIndicators/circular_progress_indicators.dart';
-import '../../widgets/Communication/ProgressIndicators/linear_progress_indicator.dart';
+import '../presentation/widgets/Communication/Badges/badge.dart';
+import '../presentation/widgets/Communication/ProgressIndicators/circular_progress_indicators.dart';
+import '../presentation/widgets/Communication/ProgressIndicators/linear_progress_indicator.dart';
 
 class CommunicationScreen extends StatelessWidget {
   const CommunicationScreen({super.key});

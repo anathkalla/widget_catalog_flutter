@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:widget_catalog_flutter/presentation/widgets/Buttons/elevated_button.dart';
+
+import '../../../../widgets/Buttons/elevated_button.dart';
 
 class CsBadge extends StatelessWidget {
   const CsBadge({super.key});
