@@ -37,6 +37,10 @@ Clone the project and create a branch and pull request
 - [ ] Divider
 - [x] Lists
 - [x] Tooltips
+=======
+- [x] Badges
+- [x] Progress Indicator
+- [x] Snackbar
 
 ### Input Widgets
 
