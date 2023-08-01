@@ -10,54 +10,53 @@ Clone the project and create a branch and pull request
 
 ### Action Widgets
 
-- [ ] Elevated Button
-- [ ] Disabled Button
-- [ ] Floating Action Button
+- [X] Elevated Button
+- [X] Disabled Button
+- [X] Floating Action Button
 - [ ] Extended Floating Action Button
-- [ ] Filled Button
-- [ ] Filled Tonal Button
-- [ ] Icon Button
-- [ ] Outlined Button
-- [ ] PopUp Menu Button
-- [ ] Segmented Button
-- [ ] Text Button
-- [ ] Toggle Button
+- [X] Filled Button
+- [X] Filled Tonal Button
+- [X] Icon Button
+- [X] Outlined Button
+- [X] PopUp Menu Button
+- [X] Segmented Button
+- [X] Text Button
+- [X] Toggle Button
 
 ### Communication Widgets
 
 - [ ] Badges
 - [ ] Progress Indicator
-- [ ] Snackbar
+- [x] Snackbar
 
 ### Containment Widgets
 
-- [ ] Cards
-- [ ] Dialogs
-- [ ] Cards
+- [x] Cards
+- [x] Dialogs
 - [ ] Carousel
 - [ ] Divider
-- [ ] Lists
-- [ ] Tooltips
+- [x] Lists
+- [x] Tooltips
 
 ### Input Widgets
 
-- [ ] Checkbox
-- [ ] Chips
-- [ ] Date Picker
-- [ ] Time Picker
-- [ ] Menus
-- [ ] Radio Input Button
-- [ ] Sliders
-- [ ] Switch
+- [x] Checkbox
+- [x] Chips
+- [x] Date Picker
+- [x] Time Picker
+- [x] Menus
+- [x] Radio Input Button
+- [x] Sliders
+- [x] Switch
 
 ### Navigation Widgets
 
-- [ ] Bottom Navigation Bar
+- [x] Bottom Navigation Bar
 - [ ] Navigation Drawer
 - [ ] TabBarView / Page View
 - [ ] Navigation Rail
 - [ ] Search Bar
-- [ ] App Bar
+- [x] App Bar
 
 ## Resources
 
