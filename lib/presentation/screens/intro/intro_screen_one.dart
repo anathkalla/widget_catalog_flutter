@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:go_router/go_router.dart';
-import 'package:widget_catalog_flutter/presentation/widgets/Buttons/elevated_button.dart';
+import 'package:widget_catalog_flutter/presentation/widgets/Buttons/ElevatedBtn/elevated_button.dart';
 import 'package:widget_catalog_flutter/presentation/widgets/Buttons/outlined_button.dart';
 
 import '../../../global/global.dart';
@@ -26,7 +26,7 @@ class IntroScreenOne extends StatelessWidget {
                 fit: BoxFit.contain),
             const Spacer(),
             const SizedBox(
-                width: 300, child: CsElevatedButton(btnTitle: "Sign Up now")),
+                width: 300, child: CsElevatedButton(btnTitle: "Sign Up")),
             const SizedBox(
               height: 20,
             ),

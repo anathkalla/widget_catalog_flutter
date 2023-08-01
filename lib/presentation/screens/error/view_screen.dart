@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:widget_catalog_flutter/presentation/widgets/Buttons/disabled_button.dart';
-import 'package:widget_catalog_flutter/presentation/widgets/Buttons/elevated_button.dart';
+import 'package:widget_catalog_flutter/presentation/widgets/Buttons/ElevatedBtn/elevated_button.dart';
 import 'package:widget_catalog_flutter/presentation/widgets/Sizing/sized_box.dart';
 
 import '../../../global/global.dart';
